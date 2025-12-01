@@ -1,0 +1,1177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Meal PLan Meastro | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{%static 'css/stylefront.css' %}">
+    <link rel="stylesheet" href="{%static 'css/stylefront.css' %}"> 
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'css/classy-nav.css' %}"> <!-- Classy Nav  -->
+    <link rel="stylesheet" href="{%static 'css/font-awesome.min.css' %}"> <!-- Icons -->
+    <!-- Optional: Bootstrap for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link rel="stylesheet" href="{%static 'css/styles.css' %}"-->
+    
+  </head>
+
+  <body>
+    <!-- Preloader >
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="img/core-img/salad.png" alt="">
+    </div-->
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">  
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="Type any keywords...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="delicious-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="{%static 'img/core-img/logo.png' %}" alt="" style="width:100px; height:100px; border-radius:50%; object-fit:cover;"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    
+                                    <li><a href="#meal-planner">Meal Planner</a>
+                                    </li>
+                                    <li><a href="#about-card">About Us</a> 
+                                        
+                                    </li>
+                                    <li><a href="#">Recipe Review </a>
+                                        
+                                    </li>
+                                    <li><a href="#contact">Contact</a>
+                                        
+                                    </li>
+                                    <li>                                     
+                                    
+
+                                    <!-- hidden container for Google Translate widget -->
+                                    <div id="google_translate_element" style="display:none; position:fixed; top:60px; right:18px; z-index:99999;"></div> 
+                                    </li>
+                                    <li>
+                                        <button id="loginBtn"
+                                            style="padding:10px 20px; border:none; border-radius:6px; background:#4CAF50; color:white; cursor:pointer; font-size:16px;"
+                                            onmouseover="this.style.background='#45a049'" 
+                                            onmouseout="this.style.background='#4CAF50'">
+                                            Login
+                                        </button>
+                                   
+                                      
+                                    </li>
+                                </ul>
+        
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url('{% static "img/bg-img/bg1.jpg" %}');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicious Homemade food</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms"></p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url('{%static "img/bg-img/bg6.jpg" %}');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicious healthy food</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms"></p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url('{%static "img/bg-img/bg7.jpg" %}');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicious Vegetable Palav</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms"></p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="heading" style="text-align:center; margin-bottom: 20px;">Diet Planning</h1>
+
+    <!-- =========== CARDS =========== -->
+    <div class="slider-container" style="width:100%; overflow:hidden; margin:20px auto;">
+        <div class="slider-track" style="display:flex; gap:20px;">
+
+            <!-- CARD 1 -->
+            <div class="card" data-name="Balanced Diet"
+                style="width:250px; background:#fff; padding:15px; border-radius:12px; 
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; cursor:pointer;">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+                    style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+                <h2>Balanced Diet</h2>
+                <p>Includes proteins, vitamins, minerals, and fiber-rich foods.</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card" data-name="High Protein"
+                style="width:250px; background:#fff; padding:15px; border-radius:12px; 
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; cursor:pointer;">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+                    style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+                <h2>High Protein</h2>
+                <p>Ideal for muscle growth and strength maintenance.</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card" data-name="Low Calorie"
+                style="width:250px; background:#fff; padding:15px; border-radius:12px; 
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; cursor:pointer;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzN3-f8A4lFUEBetVGbBA-ieEJYxUHtZOx7w&s"
+                    style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+                <h2>Low Calorie</h2>
+                <p>Perfect for weight loss and fat-burning diet plans.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========== POPUP =========== -->
+    <div id="dietModal" 
+        style="display:none; position:fixed; left:0; top:0; width:100%; height:100%;
+                background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+        <div style="background:#fff; padding:25px; width:450px; border-radius:12px; position:relative;">
+
+            <!-- Close Button -->
+            <span id="dietClose"
+                  style="position:absolute; top:10px; right:15px; font-size:26px; cursor:pointer;">&times;</span>
+
+            <!-- Title -->
+            <h2 id="dietTitle" style="margin-bottom:10px; font-size:26px;"></h2>
+
+            <!-- Description -->
+            <p id="dietDescription" style="font-size:17px; line-height:1.5; color:#333;"></p>
+        </div>
+    </div>
+
+        
+    <section class="main-section" style="padding:20px; text-align:center;">
+
+      <h2 style="font-size:28px; margin-bottom:5px;">Healthy meal ideas for weight loss</h2>
+      <p class="subtitle" style="color:#555; max-width:700px; margin:0 auto 20px;">
+        Balanced meals with clear calories and realistic fast-food swaps.
+        If you’re searching “how many calories in {popular food}”, we show the better alternative.
+      </p>
+
+      <div class="outer-card" style="overflow:hidden; width:100%;">
+        <div class="slider" style="white-space:nowrap; overflow-x:auto; scroll-behavior:smooth;">
+          <div class="cards" style="display:flex; gap:15px; padding:10px;">
+
+            <!-- BREAKFAST -->
+            <div class="card" 
+                onclick="openPopup(
+                  'Breakfast – Greek yogurt bowl', 
+                  'A high-protein breakfast that keeps you full for hours. Made with Greek yogurt, berries, and chia for better digestion. Helps control cravings and boosts morning energy.'
+                )"
+                style="min-width:220px; background:#fff; padding:15px; border-radius:12px;
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); cursor:pointer; text-align:center;">
+              <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzo9ete32Y8BC8JOx8VKHWVLsOgZ3FZWiFg&s" alt="Breakfast"
+                  style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+              <h3><b>Breakfast</b> – Greek yogurt bowl</h3>
+              <p style="color:#555;">~420 kcal · 30g protein · 50g carbs · 12g fat</p>
+            </div>
+
+            <!-- LUNCH -->
+            <div class="card"
+                onclick="openPopup(
+                  'Lunch – Chicken, rice & veggies', 
+                  'A balanced, wholesome lunch with lean chicken, rice, and vegetables. Provides long-lasting energy, muscle support, and stable blood sugar through the afternoon.'
+                )"
+                style="min-width:220px; background:#fff; padding:15px; border-radius:12px;
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); cursor:pointer; text-align:center;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRYzImgAuQDgBXRRhOs6JB7OR7v4I7Hrw0w&s" alt="Lunch"
+                  style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+              <h3><b>Lunch</b> – Chicken, rice & veggies</h3>
+              <p style="color:#555;">~650 kcal · 45g protein · 60g carbs · 18g fat</p>
+            </div>
+
+            <!-- DINNER -->
+            <div class="card"
+                onclick="openPopup(
+                  'Dinner – Salmon, quinoa & salad', 
+                  'A light, nutrient-rich dinner featuring salmon, quinoa, and salad. High in omega-3 fats and protein to support metabolism and nighttime recovery.'
+                )"
+                style="min-width:220px; background:#fff; padding:15px; border-radius:12px;
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); cursor:pointer; text-align:center;">
+              <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_WepBQEjP6Tu6mxKdETlo2rB5XbiKDMqBQ&s" alt="Dinner"
+                  style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+              <h3><b>Dinner</b> – Salmon, quinoa & salad</h3>
+              <p style="color:#555;">~560 kcal · 35g protein · 40g carbs · 26g fat</p>
+            </div>
+
+            <!-- SNACK -->
+            <div class="card"
+                onclick="openPopup(
+                  'Snack – Fruit smoothie', 
+                  'A refreshing fruit smoothie that’s low in calories but high in vitamins and fiber. Perfect for satisfying sweet cravings while staying healthy.'
+                )"
+                style="min-width:220px; background:#fff; padding:15px; border-radius:12px;
+                        box-shadow:0 4px 10px rgba(0,0,0,0.1); cursor:pointer; text-align:center;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_5U7cipVyDWLTexBoFgM8dXE757qK-waSCg&s" alt="Smoothie"
+                  style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+              <h3><b>Snack</b> – Fruit smoothie</h3>
+              <p style="color:#555;">~300 kcal · 15g protein · 40g carbs · 5g fat</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPUP MODAL -->
+    <div id="popup" style="
+      display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.6); backdrop-filter:blur(3px);
+      justify-content:center; align-items:center; z-index:9999;
+    ">
+      <div style="
+        background:#fff; padding:25px; width:90%; max-width:350px;
+        border-radius:12px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.2);
+      ">
+        <h2 id="popupTitle" style="margin-bottom:10px;"></h2>
+        <p id="popupInfo" style="color:#555; margin-bottom:20px; line-height:1.5;"></p>
+
+        <button onclick="closePopup()" 
+                style="padding:10px 20px; background:#ff7043; color:#fff;
+                      border:none; border-radius:8px; cursor:pointer;">
+          Close
+        </button>
+      </div>
+    </div>
+    
+
+
+
+
+    <!-- ##### CTA Area Start ##### -->
+    <section class="cta-area bg-img bg-overlay" style="background-image: url('{%static "img/bg-img/bg4.jpg" %}');">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <!-- Cta Content -->
+                    <div class="cta-content text-center">
+                        <h2>Ai Recipe Planner</h2>
+                        //<p></p>
+                        <a href="#" class="btn delicious-btn">Discover all the receipies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-section">
+        <div class="outer-card">
+          <h2>Why AI Meal Planner Works</h2>
+          <p class="subtitle">
+            AI Meal Planner and our AI meal plan generator help you stay consistent:
+            smarter calories, balanced macros, and simple weekly structure.
+          </p>
+
+          <!-- All small cards inside one horizontal container -->
+          <div class="inner-cards">
+            <div class="card">
+              <h3>Personalized by AI</h3>
+              <p>AI tailors calories, protein, and portions to your inputs — sex, age, weight, height, and activity — and adapts as you go.</p>
+            </div>
+
+            <div class="card">
+              <h3>Plans in Seconds</h3>
+              <p>The AI meal plan generator creates a 7-day menu instantly — breakfast, lunch, and dinner with clear macros.</p>
+            </div>
+
+            <div class="card">
+              <h3>Short Grocery List</h3>
+              <p>Cards reuse ingredients to simplify shopping. You get a weekly list that reduces food waste and fits your schedule.</p>
+            </div>
+
+            <div class="card">
+              <h3>Improves Weekly</h3>
+              <p>AI learns from your swaps and likes to improve future menus automatically — more meals you enjoy, fewer you skip.</p>
+            </div>
+
+            <div class="card">
+              <h3>AI Macro Tracking & Calorie Calculator</h3>
+              <p>Hit your nutrition targets with AI-assisted macro tracking and a built-in calorie calculator for precise results.</p>
+            </div>
+
+            <div class="card">
+              <h3>Intermittent Fasting & Meal Prep Friendly</h3>
+              <p>Supports 16/8 fasting windows and meal prep — practical AI diet ideas that fit your busy lifestyle.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div style="width: 1400px; margin: 40px auto; background: #E8BF97; display: flex; align-items: center; padding: 30px; border-radius: 18px; box-shadow: 0 4px 18px rgba(0,0,0,0.12); gap: 25px;">
+
+      <!-- LEFT TEXT CONTENT -->
+      <section id="meal-planner">
+        <div style="flex: 1;">
+      
+          <h1 style="font-size: 32px; margin-bottom: 15px; color:#111;">Start meal planner today</h1>
+          
+          <p style="font-size: 18px; margin-bottom: 20px; color:#444;">
+              Change your routine, improve your health and feel better every week.
+          </p>
+
+          <ul style="list-style:none; padding:0; margin:0 0 25px 0; color:#111; font-size:17px;">
+              <li style="margin-bottom: 10px;"><span style="margin-right:6px;">❤</span> Heart-healthy, balanced meals</li>
+              <li style="margin-bottom: 10px;"><span style="margin-right:6px;">✨</span> Steady energy and better sleep</li>
+              <li><span style="margin-right:6px;">📅</span> Weekly plan with clear portions</li>
+          </ul>
+        
+          <button id="createMealBtn" style="
+              background: brown;
+              color: white;
+              border: none;
+              padding: 12px 22px;
+              font-size: 17px;
+              border-radius: 8px;
+              cursor: pointer;
+          ">Create your plan</button>
+        </div>
+      </section>
+
+      <!-- RIGHT LARGE IMAGE -->
+      <div style="flex: 1; text-align:right;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVoo4aeWPNnJHvtNMMWzRcbRkVZNQJ12s5mw&s"
+              style="width: 100%; max-width: 400px; border-radius: 14px;" />
+      </div>
+    </div>
+    <style>
+        .about-card {
+          width: 50vw;
+          max-width: 1400px;
+          padding: 34px;
+          border-radius: 18px;
+          background: linear-gradient(180deg, #E8BF97, #E8BF97);
+          box-shadow: 0 10px 30px rgba(20,30,60,0.08);
+          border: 1px solid rgba(79,95,148,0.06);
+          font-family: "Segoe UI", Roboto, Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          margin: 0 auto; /* centers the card horizontally */
+        }
+
+        .about-card .kicker {
+          font-size: 13px;
+          padding: 6px 10px;
+          border-radius: 999px;
+          background: rgba(75,123,236,0.12);
+          color: #2f4fb3;
+          font-weight: 600;
+          width: fit-content;
+        }
+
+        .about-card h2 {
+          margin: 4px 0 0 0;
+          font-size: 28px;
+          color: #14203a;
+          font-weight: 700;
+        }
+
+        .about-card p {
+          margin: 8px 0 0 0;
+          color: #4a5568;
+          font-size: 16px;
+          line-height: 1.7;
+          text-align: justify;
+        }
+
+        .about-meta {
+          margin-top: 18px;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          font-size: 14px;
+          color: #6b7280;
+        }
+
+        .pill {
+          padding: 8px 12px;
+          border-radius: 999px;
+          background: rgba(71,85,105,0.06);
+          color: #394455;
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        @media (max-width: 900px) {
+          .about-card {
+            width: 90%;
+            padding: 22px;
+            border-radius: 12px;
+          }
+        }
+      </style>
+    <section style="background-color: #E8BF97; padding:20px; margin-bottom:40px; border-radius:8px; display:flex; justify-content:center;">
+      <div style="width:1200px; max-width:95%; display:flex; flex-direction:column; align-items:center;">
+
+        <!-- Heading -->
+        <div style="width:100%; background:linear-gradient(135deg, #ff8a65, #ff7043); color:#fff; padding:20px; border-radius:15px; text-align:center; margin-bottom:20px;">
+          <h2 style="font-size:36px; font-weight:700; margin:0;">🍽 Recipe Reviews</h2>
+        </div>
+
+        <!-- Reviews slider -->
+        <div style="width:100%; height:400px; overflow:hidden; border-radius:15px; perspective:1000px;">
+          <div id="reviewTrack" style="display:flex; flex-direction:column; transform-style:preserve-3d; transition: transform 0.02s linear;">
+
+            <!-- CARD 1 -->
+            <div class="review-card" style="
+              background:#fff; padding:15px; margin-bottom:15px;
+              border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);
+              display:flex; gap:15px; align-items:flex-start;
+            ">
+              <!-- IMAGE LEFT -->
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVfGB9-VHh1iKRt4k2QWiCdyjTtB4O3YsSOg&s"
+                  style="width:180px; height:auto; border-radius:10px;">
+
+              <!-- RIGHT CONTENT -->
+              <div style="flex:1;">
+                <h3 style="margin:0 0 5px 0;">Chocolate Cake</h3>
+                <div style="font-size:18px; margin-bottom:8px;">⭐⭐⭐⭐⭐</div>
+
+                <p class="review-text" style="
+                  overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical;
+                  -webkit-line-clamp:3; margin:0 0 5px 0;
+                ">
+                  Absolutely delicious! The cake was moist and the frosting perfect. Everyone in my family loved it.
+                </p>
+
+                <div class="more-info" style="display:none; margin-top:8px; font-size:14px; color:#555;">
+                  Ingredients: Flour, Sugar, Cocoa, Butter, Eggs.<br>
+                  Tips: Preheat oven to 180°C. Do not overmix. Frost after cooling completely.
+                </div>
+
+                <span style="color:#ff7043; cursor:pointer; font-weight:600;" onclick="toggleReview(this)">
+                  Read more
+                </span>
+
+                <div style="text-align:right; margin-top:8px;">- Priya</div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="review-card" style="
+              background:#fff; padding:15px; margin-bottom:15px;
+              border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);
+              display:flex; gap:15px; align-items:flex-start;
+            ">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSumFLIWxAqyiYv9b37lgDaJ6zV9LUpoH2o4Q&s"
+                  style="width:180px; height:auto; border-radius:10px;">
+
+              <div style="flex:1;">
+                <h3 style="margin:0 0 5px 0;">Veggie Pasta</h3>
+                <div style="font-size:18px; margin-bottom:8px;">⭐⭐⭐⭐☆</div>
+
+                <p class="review-text" style="
+                  overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical;
+                  -webkit-line-clamp:3; margin:0 0 5px 0;
+                ">
+                  Very healthy and tasty. My family loved it. Will cook again! Easy to prepare and full of flavor.
+                </p>
+
+                <div class="more-info" style="display:none; margin-top:8px; font-size:14px; color:#555;">
+                  Ingredients: Pasta, Tomato Sauce, Bell Peppers, Zucchini, Olive Oil.<br>
+                  Tips: Cook pasta al dente. Toss vegetables in garlic and olive oil for extra flavor.
+                </div>
+
+                <span style="color:#ff7043; cursor:pointer; font-weight:600;" onclick="toggleReview(this)">
+                  Read more
+                </span>
+
+                <div style="text-align:right; margin-top:8px;">- Rahul</div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="review-card" style="
+              background:#fff; padding:15px; margin-bottom:15px;
+              border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);
+              display:flex; gap:15px; align-items:flex-start;
+            ">
+              <img src="https://lilluna.com/wp-content/uploads/2022/10/fruit-smoothie-resize-14.jpg"
+                  style="width:180px; height:auto; border-radius:10px;">
+
+              <div style="flex:1;">
+                <h3 style="margin:0 0 5px 0;">Fruit Smoothie</h3>
+                <div style="font-size:18px; margin-bottom:8px;">⭐⭐⭐☆☆</div>
+
+                <p class="review-text" style="
+                  overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical;
+                  -webkit-line-clamp:3; margin:0 0 5px 0;
+                ">
+                  Refreshing and perfect for breakfast. Easy to make and packed with nutrients. Great way to start the day.
+                </p>
+
+                <div class="more-info" style="display:none; margin-top:8px; font-size:14px; color:#555;">
+                  Ingredients: Banana, Berries, Yogurt, Honey.<br>
+                  Tips: Use frozen fruits for a thicker smoothie.
+                </div>
+
+                <span style="color:#ff7043; cursor:pointer; font-weight:600;" onclick="toggleReview(this)">
+                  Read more
+                </span>
+
+                <div style="text-align:right; margin-top:8px;">- Ananya</div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="review-card" style="
+              background:#fff; padding:15px; margin-bottom:15px;
+              border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);
+              display:flex; gap:15px; align-items:flex-start;
+            ">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuRPYbUjREpMvDKUpYX-sbBw1MUEXLn1xZQ&s"
+                  style="width:180px; height:auto; border-radius:10px;">
+
+              <div style="flex:1;">
+                <h3 style="margin:0 0 5px 0;">Banana Bread</h3>
+                <div style="font-size:18px; margin-bottom:8px;">⭐⭐⭐⭐⭐</div>
+
+                <p class="review-text" style="
+                  overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical;
+                  -webkit-line-clamp:3; margin:0 0 5px 0;
+                ">
+                  Soft, moist, and flavorful! Perfect for breakfast or snacks. My kids love it.
+                </p>
+
+                <div class="more-info" style="display:none; margin-top:8px; font-size:14px; color:#555;">
+                  Ingredients: Bananas, Flour, Sugar, Eggs, Butter.<br>
+                  Tips: Use overripe bananas for sweetness.
+                </div>
+
+                <span style="color:#ff7043; cursor:pointer; font-weight:600;" onclick="toggleReview(this)">
+                  Read more
+                </span>
+
+                <div style="text-align:right; margin-top:8px;">- Karthik</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+      let isPaused = false;
+
+      function toggleReview(el) {
+        const card = el.parentElement;
+        const reviewText = card.querySelector('.review-text');
+        const moreInfo = card.querySelector('.more-info');
+
+        if (moreInfo.style.display === "block") {
+          moreInfo.style.display = "none";
+          reviewText.style.webkitLineClamp = "3";
+          el.innerText = "Read more";
+          isPaused = false;
+        } else {
+          moreInfo.style.display = "block";
+          reviewText.style.webkitLineClamp = "unset";
+          el.innerText = "Show less";
+          isPaused = true;
+        }
+      }
+
+      // Autoscroll
+      const track = document.getElementById('reviewTrack');
+      const cardHeight = track.children[0].offsetHeight + 15;
+      let scrollPos = 0;
+
+      function scrollReviews() {
+        if (isPaused) return;
+        scrollPos += 1;
+        track.style.transform = 'translateY(-' + scrollPos + 'px)';
+
+        if (scrollPos >= cardHeight) {
+          track.appendChild(track.children[0]);
+          track.style.transition = 'none';
+          track.style.transform = 'translateY(0)';
+          scrollPos = 0;
+          setTimeout(()=> track.style.transition = 'transform 0.02s linear', 50);
+        }
+      }
+
+      track.style.transition = 'transform 0.02s linear';
+      setInterval(scrollReviews, 20);
+
+      track.addEventListener('mouseenter', () => isPaused = true);
+      track.addEventListener('mouseleave', () => isPaused = false);
+    </script>
+
+
+
+
+    <div class="about-card" id="about-card" style="width: 300%;">
+      <h2>About Us</h2>
+
+      <p>
+        We are a dedicated student team working on an innovative 
+        <strong>AI-Powered Nutritional Recipe Planner</strong>. Our system helps users 
+        generate healthy and personalized recipes based on their dietary preferences, 
+        nutritional needs, and available pantry ingredients. It includes a smart pantry 
+        tracker, expiry alerts, multi-language recipe instructions, and a sound-assist 
+        feature to make cooking simpler, healthier, and more enjoyable.
+      </p>
+
+      <div class="about-meta">
+        <span class="pill">Pantry Tracker</span>
+        <span class="pill">Nutrition Insights</span>
+        <span class="pill">Smart Recipes</span>
+      </div>
+    </div>
+
+    
+    <section class="contact-section" id="contact">
+      <div class="contact-box">
+          <h2>Contact Us</h2>
+
+          <form method="POST" action="{% url 'contact' %}" class="contact-form">
+              {% csrf_token %}
+              <div class="input-row">
+                  <label>Name</label>
+                  <input type="text" name="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="input-row">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-row">
+                  <label>Message</label>
+                  <textarea name="message" rows="4" placeholder="Enter your message" required></textarea>
+              </div>
+
+              <button type="submit" class="send-btn">Send</button>
+          </form>
+          {% if messages %}
+          <ul style="margin-top:10px; color:green;">
+              {% for message in messages %}
+                  <li>{{ message }}</li>
+              {% endfor %}
+          </ul>
+          {% endif %}
+      </div>
+    </section>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                     <!--Footer Logo -->
+                    
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    
+                  <!-- Copywrite -->
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Meal Planner</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal"
+        style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+        
+        <div style="background:white; padding:30px; border-radius:10px; width:300px; position:relative; margin:auto; top:5%;">
+            <span id="loginClose" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+            <h2>Login</h2>
+
+            <form method="POST" action="" style="display:flex; flex-direction:column; gap:10px;">
+                {% csrf_token %}
+                {{ login_form.username.label_tag }}
+                {{ login_form.username }}
+                {{ login_form.password.label_tag }}
+                {{ login_form.password }}
+                
+                {% if login_error %}
+                    <p style="color:red; font-size:0.85em;">{{ login_error }}</p>
+                {% endif %}
+
+                <button type="button" onclick="fpOpenModal('fp_email_modal')" 
+                        style="border:none; background:none; color:#007bff; cursor:pointer;">
+                    Forgot Password?
+                </button>
+
+                <button type="submit" name="login_submit"
+                    style="padding:10px 20px; border:none; border-radius:6px; background:#4CAF50; color:white; cursor:pointer; font-size:16px;"
+                    onmouseover="this.style.background='#45a049'" 
+                    onmouseout="this.style.background='#4CAF50'">
+                    Login
+                </button>
+            </form>
+
+            <p id="toRegister"
+                style="color:#4CAF50; cursor:pointer; font-size:14px; text-decoration:underline; margin-top:10px;">
+                Don't have an account? Register
+            </p>
+        </div>
+    </div>
+
+    <!-- REGISTER MODAL -->
+    <div id="registerModal"
+        style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%;background:rgba(0,0,0,0.5); justify-content:center; align-items:center;overflow:auto;">
+        
+        <div style="background:white; padding:20px; border-radius:10px; width:500px;max-height:600px; position:relative; overflow-y:auto;">
+            <span id="registerClose" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+            <h2>Register</h2>
+
+            <form method="POST" action="" id="registerForm" style="display:flex; flex-direction:column; gap:5px;">
+                {% csrf_token %}
+
+                <label for="id_first_name">First Name</label>
+                <input type="text" name="first_name" id="id_first_name" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <p id="firstNameError" style="color:red; font-size:0.85em;"></p>
+
+                <label for="id_last_name">Last Name</label>
+                <input type="text" name="last_name" id="id_last_name" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <p id="lastNameError" style="color:red; font-size:0.85em;"></p>
+
+                <label for="id_username">Username</label>
+                <input type="text" name="username" id="id_username" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <p id="usernameError" style="color:red; font-size:0.85em;"></p>
+
+                <label for="id_email">Email</label>
+                <input type="email" name="email" id="id_email" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <p id="emailError" style="color:red; font-size:0.85em;"></p>
+
+                <label for="id_password1">Password</label>
+                <input type="password" name="password1" id="id_password1" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+
+                <label for="id_password2">Confirm Password</label>
+                <input type="password" name="password2" id="id_password2" required style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <p id="passwordError" style="color:red; font-size:0.85em;"></p>
+
+                {% if register_error %}
+                    <p style="color:red; font-size:0.85em;">{{ register_error }}</p>
+                {% endif %}
+
+                <button type="submit" name="register_submit"
+                    style="padding:10px 20px; border:none; border-radius:6px; background:#4CAF50; color:white; cursor:pointer; font-size:16px;"
+                    onmouseover="this.style.background='#45a049'" 
+                    onmouseout="this.style.background='#4CAF50'">
+                    Register
+                </button>
+            </form>
+
+            <p id="toLogin"
+                style="color:#4CAF50; cursor:pointer; font-size:14px; text-decoration:underline; margin-top:10px;">
+                Already have an account? Login
+            </p>
+        </div>
+    </div>
+
+    <style>
+        .fp_modal_bg { 
+            display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+            background:rgba(0,0,0,0.45); justify-content:center; align-items:center; z-index:99999;
+        }
+        .fp_modal_card { 
+            background:#ffffff; padding:24px; width:92%; max-width:360px; border-radius:8px;
+            box-shadow:0 0 10px rgba(0,0,0,.2); text-align:center;
+        }
+        .fp_modal_input { 
+            width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;
+        }
+        .fp_modal_btn { 
+            width:100%; padding:10px; background:#007bff; border:none; border-radius:4px;
+            color:white; cursor:pointer; font-weight:600; margin-top:8px;
+        }
+        .fp_close_btn {
+            width:100%; padding:9px; background:#d9534f; border:none; border-radius:4px;
+            color:white; cursor:pointer; margin-top:8px;
+        }
+    </style>
+
+    <!-- 1️⃣ EMAIL POPUP -->
+    <div class="fp_modal_bg" id="fp_email_modal">
+      <div class="fp_modal_card">
+        <h3 style="margin-bottom:10px;">Reset Password</h3>
+        <input type="email" id="fp_email" class="fp_modal_input" placeholder="Enter Registered Email">
+        <button class="fp_modal_btn" onclick="fpSendOTP()">Send OTP</button>
+        <button class="fp_close_btn" onclick="fpCloseAll()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- 2️⃣ OTP POPUP -->
+    <div class="fp_modal_bg" id="fp_otp_modal">
+      <div class="fp_modal_card">
+        <h3 style="margin-bottom:10px;">Verify OTP</h3>
+        <input type="text" id="fp_otp" class="fp_modal_input" placeholder="Enter 6-digit OTP" maxlength="6">
+        <button class="fp_modal_btn" onclick="fpVerifyOTP()">Verify OTP</button>
+        <button class="fp_close_btn" onclick="fpCloseAll()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- 3️⃣ NEW PASSWORD POPUP -->
+    <div class="fp_modal_bg" id="fp_pass_modal">
+      <div class="fp_modal_card">
+        <h3 style="margin-bottom:10px;">Create New Password</h3>
+        <input type="password" id="fp_pass1" class="fp_modal_input" placeholder="New Password (min 8 chars)">
+        <input type="password" id="fp_pass2" class="fp_modal_input" placeholder="Confirm Password">
+        <button class="fp_modal_btn" onclick="fpResetPassword()">Update Password</button>
+        <button class="fp_close_btn" onclick="fpCloseAll()">Cancel</button>
+      </div>
+    </div>
+
+    <script>
+    function fpOpenModal(id){ document.getElementById(id).style.display="flex"; }
+    function fpCloseAll(){ ["fp_email_modal","fp_otp_modal","fp_pass_modal"]
+    .forEach(id => document.getElementById(id).style.display="none"); }
+
+    // 1️⃣ Send OTP
+    function fpSendOTP(){
+        let email = document.getElementById("fp_email").value;
+        let fd = new FormData(); fd.append("email", email);
+
+        fetch("/forgot-password/", { method:"POST", headers:{ "X-CSRFToken": "{{ csrf_token }}" }, body: fd })
+        .then(r => r.json()).then(res => {
+            if(res.status === "success"){ fpCloseAll(); fpOpenModal("fp_otp_modal"); }
+            else alert(res.message);
+        });
+    }
+
+    // 2️⃣ Verify OTP
+    function fpVerifyOTP(){
+        let email = document.getElementById("fp_email").value;
+        let otp = document.getElementById("fp_otp").value;
+        let fd = new FormData(); fd.append("email", email); fd.append("otp", otp);
+
+        fetch("/verify-otp/", { method:"POST", headers:{ "X-CSRFToken": "{{ csrf_token }}" }, body: fd })
+        .then(r => r.json()).then(res => {
+            if(res.status === "success"){ fpCloseAll(); fpOpenModal("fp_pass_modal"); }
+            else alert(res.message);
+        });
+    }
+
+    // 3️⃣ Reset password
+    function fpResetPassword(){
+        let email = document.getElementById("fp_email").value;
+        let p1 = document.getElementById("fp_pass1").value;
+        let p2 = document.getElementById("fp_pass2").value;
+
+        if(p1.length < 8){ alert("Password must be at least 8 characters"); return; }
+        if(p1 !== p2){ alert("Passwords do not match"); return; }
+
+        let fd = new FormData(); fd.append("email", email); fd.append("password", p1);
+
+        fetch("/reset-password/", { method:"POST", headers:{ "X-CSRFToken": "{{ csrf_token }}" }, body: fd })
+        .then(r => r.json()).then(res => {
+            if(res.status === "success"){ 
+                alert("Password updated successfully. Please login."); 
+                fpCloseAll(); 
+                location.reload();
+            } else alert(res.message);
+        });
+    }
+    </script>
+
+
+
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{%static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{%static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{%static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{%static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{%static 'js/active.js' %}"></script>
+    <script>
+      const loginBtn = document.getElementById('loginBtn');
+      const createMealBtn = document.getElementById('createMealBtn');
+      const loginModal = document.getElementById('loginModal');
+      const loginClose = document.getElementById('loginClose');
+      const registerModal = document.getElementById('registerModal');
+      const registerClose = document.getElementById('registerClose');
+      const toRegister = document.getElementById('toRegister');
+      const toLogin = document.getElementById('toLogin');
+
+      // Open Login
+      loginBtn.onclick = () => loginModal.style.display = 'flex';
+      createMealBtn.onclick = () => loginModal.style.display = 'flex';
+
+      // Close Login
+      loginClose.onclick = () => loginModal.style.display = 'none';
+
+      // Close Register
+      registerClose.onclick = () => registerModal.style.display = 'none';
+
+      // Switch Login → Register
+      toRegister.onclick = () => {
+          loginModal.style.display = 'none';
+          registerModal.style.display = 'flex';
+      }
+
+      // Switch Register → Login
+      toLogin.onclick = () => {
+          registerModal.style.display = 'none';
+          loginModal.style.display = 'flex';
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+          if (event.target == loginModal) loginModal.style.display = 'none';
+          if (event.target == registerModal) registerModal.style.display = 'none';
+      }
+
+      // ========= REAL-TIME VALIDATION =========
+      const firstName = document.getElementById('id_first_name');
+      const lastName = document.getElementById('id_last_name');
+      const username = document.getElementById('id_username');
+      const email = document.getElementById('id_email');
+      const password1 = document.getElementById('id_password1');
+      const password2 = document.getElementById('id_password2');
+
+      const firstNameError = document.getElementById('firstNameError');
+      const lastNameError = document.getElementById('lastNameError');
+      const usernameError = document.getElementById('usernameError');
+      const emailError = document.getElementById('emailError');
+      const passwordError = document.getElementById('passwordError');
+
+      // First name validation
+      firstName?.addEventListener('input', () => {
+          const val = firstName.value.trim();
+          if (!/^[A-Za-z]+$/.test(val)) {
+              firstNameError.textContent = "First name must contain only letters.";
+          } else {
+              firstNameError.textContent = "";
+          }
+      });
+
+      // Last name validation
+      lastName?.addEventListener('input', () => {
+          const val = lastName.value.trim();
+          if (!/^[A-Za-z]+$/.test(val)) {
+              lastNameError.textContent = "Last name must contain only letters.";
+          } else {
+              lastNameError.textContent = "";
+          }
+      });
+
+      // Username validation
+      username?.addEventListener('input', () => {
+          const val = username.value.trim();
+          if (!/^[A-Za-z][A-Za-z0-9]*$/.test(val)) {
+              usernameError.textContent = "Username must be alphanumeric.";
+          } else {
+              usernameError.textContent = "";
+          }
+      });
+
+      // Email validation
+      email?.addEventListener('input', () => {
+          const val = email.value.trim();
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val)) {
+              emailError.textContent = "Please enter a valid email address.";
+          } else {
+              emailError.textContent = "";
+          }
+      });
+
+      // Password match validation
+      password2?.addEventListener('input', () => {
+          if (password1.value && password2.value && password1.value !== password2.value) {
+              passwordError.textContent = "Passwords do not match.";
+          } else {
+              passwordError.textContent = "";
+          }
+      });
+
+      (function() {
+        const carousel = document.getElementById('carousel');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        // Scroll one card at a time on button click
+        function scrollByCard(direction) {
+          const card = carousel.querySelector('.card');
+          if (!card) return;
+          const style = getComputedStyle(carousel);
+          const gap = parseInt(style.gap) || 20;
+          const cardWidth = card.getBoundingClientRect().width;
+          const scrollAmount = cardWidth + gap;
+          carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+
+        prev.addEventListener('click', () => scrollByCard(-1));
+        next.addEventListener('click', () => scrollByCard(1));
+
+        // 🔥 Auto-scroll setup (faster + smoother)
+        let isPaused = false;
+        let lastTime = null;
+
+        // ✅ Increase this value for faster motion
+        const speed = 400; // pixels per second (try 400–800 for visible speed)
+
+        carousel.addEventListener('mouseenter', () => { isPaused = true; });
+        carousel.addEventListener('mouseleave', () => { isPaused = false; });
+
+        function step(timestamp) {
+          if (!lastTime) lastTime = timestamp;
+          const dt = timestamp - lastTime;
+          lastTime = timestamp;
+
+          if (!isPaused) {
+            carousel.scrollLeft += (speed * dt) / 1000; // move right
+
+            // If end reached, instantly loop to start
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2) {
+              carousel.scrollLeft = 0;
+            }
+          }
+          requestAnimationFrame(step);
+        }
+
+        requestAnimationFrame(step);
+      })();
+
+      // The text to show inside popup
+      const diets = {
+          "Balanced Diet": "A balanced diet includes carbohydrates, proteins, healthy fats, fiber, vitamins, and minerals. It supports overall growth, boosts immunity, and maintains body functions.",
+          "High Protein": "High protein diets help build muscle, increase strength, repair tissues, and support weight loss by keeping you full longer.",
+          "Low Calorie": "Low calorie diets focus on nutrient-dense foods that support fat loss, reduce obesity, and improve heart health."
+      };
+
+      const cards = document.querySelectorAll(".card");
+      const modal = document.getElementById("dietModal");
+      const title = document.getElementById("dietTitle");
+      const description = document.getElementById("dietDescription");
+      const closeBtn = document.getElementById("dietClose");
+
+      // Open modal when card is clicked
+      cards.forEach(card => {
+          card.addEventListener("click", () => {
+              const name = card.getAttribute("data-name");
+              title.innerText = name;
+              description.innerText = diets[name];  // <-- THIS SHOWS DESCRIPTION
+              modal.style.display = "flex";
+          });
+      });
+
+      // Close modal
+      closeBtn.onclick = () => modal.style.display = "none";
+      window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+      function openPopup(title, info) {
+        document.getElementById("popupTitle").innerText = title;
+        document.getElementById("popupInfo").innerText = info;
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
+      document.getElementById("popup").addEventListener("click", function(e) {
+        if (e.target === this) closePopup();
+      });
+
+    
+
+    
+
+    </script>
+ </body>
+
+</html>
